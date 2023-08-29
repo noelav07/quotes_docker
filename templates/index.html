@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quotes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='fav.svg') }}" type="image/x-icon">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Inspiration App</h1>
+        <p class="quote">{{ quote }}</p>
+        <button onclick="location.reload()">Get Another Quote</button>
+    </div>
+</body>
+</html>
